@@ -52,11 +52,11 @@ int main() {
     std::vector< Mat > tvecs;
     for (int i = 0; i < successes; i++) {
         std::vector< Point3f > buf;
-        for (int j = 0; j < board_r; j++) {
-            for (int k = 0; k < board_c; k++){
+        for (int j = 0; j < board_c; j++) {
+            for (int k = 0; k < board_r; k++){
                 Point3f pt;
-                pt.x = j * square_size.height;
-                pt.y = k * square_size.width;
+                pt.x = j * square_size.width;
+                pt.y = k * square_size.height;
                 pt.z = 0;
                 buf.push_back(pt);
             }

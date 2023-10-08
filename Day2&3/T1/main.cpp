@@ -15,10 +15,14 @@ const auto F((Matrix<double, 3, 4>() <<
 const Quaternion Q(-0.5, 0.5, 0.5, -0.5);
 const Vector3d T(2, 2, 2);
 
-cv::Mat img(1000, 1500, CV_8UC3);
+const int img_w = 1300;
+const int img_h = 800;
+
+cv::Mat img(img_h, img_w, CV_8UC3);
 
 int main() {
     freopen("../points.txt", "r", stdin);
+    freopen("../points_output.txt", "w", stdout);
     int n; std::cin >> n;
     Matrix4Xd coord(4, n);
     for (int i = 0; i < n; i++) {
@@ -31,10 +35,20 @@ int main() {
     QT(3, 3) = 1;
     Matrix3Xd proj_coord = F * QT * coord;
 
-    for (int i = 0;i < n; i++) {
-        Vector3d p = proj_coord.col(i);
-        cv::circle(img, cv::Point(p[0] / p[2], p[1] / p[2]), 1, {255, 255, 255}, 1);
+    std::vector< cv::Point2f > points;
+    for (int i = 0; i < n; i++) {
+        Vector3d p3 = proj_coord.col(i);
+        cv::Point2f p(p3[0] / p3[2], p3[1] / p3[2]);
+        if (p.x >= 0 && p.x <= img_w && p.y >= 0 && p.y <= img_h) {
+            cv::circle(img, p, 1, {255, 255, 255}, 1);
+            points.push_back(p);
+        }
     }
+    std::cout << (int)points.size() << std::endl;
+    for (auto p : points) {
+        std::cout << p.x - img_w / 2 << " " << p.y - img_h / 2<< std::endl;
+    }
+
     cv::imshow("img", img);
     cv::imwrite("../res.jpg", img);
     cv::waitKey(0);

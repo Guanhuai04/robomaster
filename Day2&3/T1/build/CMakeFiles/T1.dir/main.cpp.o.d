@@ -1,5 +1,5 @@
 CMakeFiles/T1.dir/main.cpp.o: \
- /media/guanhuai/SharedVolum/Robomaster/培训/Homework/Day2&3/T1/main.cpp \
+ /home/guanhuai/Desktop/Robomaster/培训/Homework/Day2&3/T1/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
