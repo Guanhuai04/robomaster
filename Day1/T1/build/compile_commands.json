@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/guanhuai/Desktop/Robomaster/培训/Homework/Day1/T1/build",
+  "command": "/usr/bin/g++  -isystem /usr/local/include/opencv4 -g -o CMakeFiles/T1.dir/main.cpp.o -c /home/guanhuai/Desktop/Robomaster/培训/Homework/Day1/T1/main.cpp",
+  "file": "/home/guanhuai/Desktop/Robomaster/培训/Homework/Day1/T1/main.cpp"
+}
+]

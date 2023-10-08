@@ -1,0 +1,3 @@
+/home/guanhuai/Desktop/Robomaster/培训/Homework/Day2&3/T2/cmake-build-debug/CMakeFiles/T2.dir
+/home/guanhuai/Desktop/Robomaster/培训/Homework/Day2&3/T2/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/guanhuai/Desktop/Robomaster/培训/Homework/Day2&3/T2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

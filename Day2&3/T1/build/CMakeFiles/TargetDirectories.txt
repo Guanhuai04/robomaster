@@ -1,0 +1,3 @@
+/media/guanhuai/SharedVolum/Robomaster/培训/Homework/Day2&3/T1/build/CMakeFiles/T1.dir
+/media/guanhuai/SharedVolum/Robomaster/培训/Homework/Day2&3/T1/build/CMakeFiles/edit_cache.dir
+/media/guanhuai/SharedVolum/Robomaster/培训/Homework/Day2&3/T1/build/CMakeFiles/rebuild_cache.dir
