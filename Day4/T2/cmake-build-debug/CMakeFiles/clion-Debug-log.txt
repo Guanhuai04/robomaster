@@ -1,0 +1,7 @@
+/home/guanhuai/clion-2023.2.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/guanhuai/clion-2023.2.2/bin/ninja/linux/x64/ninja -G Ninja -S /home/guanhuai/Desktop/Robomaster/培训/Homework/Day4/T2 -B /home/guanhuai/Desktop/Robomaster/培训/Homework/Day4/T2/cmake-build-debug
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found version "3.10.12") 
+-- Python include dirs are: /home/guanhuai/anaconda3/envs/forcppEnvs/include/python3.10
+-- Python library is: /home/guanhuai/anaconda3/envs/forcppEnvs/lib/libpython3.10.so
+-- Configuring done (0.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/guanhuai/Desktop/Robomaster/培训/Homework/Day4/T2/cmake-build-debug
